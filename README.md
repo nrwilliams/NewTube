@@ -1,6 +1,6 @@
-# ReduxSimpleStarter
+# NewTube
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+This is my take on YouTube. This app uses React to build out a live search functionality as well as using the YouTube API to pull in the data.
 
 ### Getting Started
 
