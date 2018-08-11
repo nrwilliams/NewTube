@@ -13,7 +13,7 @@ class SearchBar extends Component {
 				<input 
 				value={this.state.term}
 				onChange={event => this.onInputChange(event.target.value)} />
-				<button onClick={() => this.props.onSearchTermChange(this.state.term)}>SUBMIT</button>
+				<button onClick={() => this.props.onSearchTermChange(this.state.term)}>SEARCH</button>
 			</div>
 			);
 	}
