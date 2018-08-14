@@ -32,13 +32,27 @@ class App extends Component {
 		const videoSearch = _.debounce((term) => {this.videoSearch(term)}, 300)
 
 		return (
-			<div>
-				<SearchBar onSearchTermChange={videoSearch} />
-				<VideoDetail video={this.state.selectedVideo} />
+		<span>
+			<header>
+          	<nav class="navbar navbar-expand-md navbar-light bg-light">
+                <div class="container">
+				  <a class="navbar-brand" href="/"><img src="img/logo.png" class="logo" /></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <SearchBar onSearchTermChange={videoSearch} />
+                </div>
+            </nav>
+          	</header>
+
+      	    <div class="container">	
+					<VideoDetail video={this.state.selectedVideo} />
 				<VideoList 
-				onVideoSelect={selectedVideo => this.setState({selectedVideo}) }
-				videos={this.state.videos} />
+					onVideoSelect={selectedVideo => this.setState({selectedVideo}) }
+					videos={this.state.videos} />
 			</div>
+		</span>
+
 		);
 	}
 }

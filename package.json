@@ -20,10 +20,16 @@
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
+    "@types/moment": "^2.13.0",
+    "@types/moment-timezone": "^0.5.7",
     "babel-preset-stage-1": "^6.1.18",
+    "json-loader": "^0.5.7",
     "lodash": "^3.10.1",
+    "moment": "^2.22.2",
     "react": "16.3.2",
+    "react-datetime": "^2.15.0",
     "react-dom": "16.3.2",
+    "react-moment": "^0.7.9",
     "react-redux": "5.0.7",
     "redux": "4.0.0",
     "youtube-api-search": "0.0.5"
