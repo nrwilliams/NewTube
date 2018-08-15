@@ -14,7 +14,9 @@ const VideoDetail = ({video}) => {
 
 	const videoId = video.id.videoId;
 	const url = `https://www.youtube.com/embed/${videoId}`;
-	const date = (new Date(video.snippet.publishedAt)).toString();
+	const dayPublished = (new Date(video.snippet.publishedAt)).toUTCString().substring(5, 7);
+	const monthPublished = (new Date(video.snippet.publishedAt)).toUTCString().substring(8, 12);
+	const yearPublished = (new Date(video.snippet.publishedAt)).toUTCString().substring(12, 16);
 
 	return (
 		<div className="row">
@@ -28,8 +30,7 @@ const VideoDetail = ({video}) => {
 				<div><h2>{video.snippet.title}</h2></div>
 				<div>{video.snippet.description}</div>
 				<div><b>Channel:</b> {video.snippet.channelTitle}</div>
-				<div><b>Published:</b> {date}</div>
-				{date}
+				<div><b>Published:</b> {monthPublished} {dayPublished}, {yearPublished}</div>
 				
 			</div>
 		</div>

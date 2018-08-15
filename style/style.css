@@ -22,6 +22,28 @@
     box-shadow: none;
     width: 300px;
  }
+.video-list-group {
+    padding: 0 0 0 0;
+}
+.video-list-item {
+    display: inline-block;
+    width: 30%;
+    margin: 14px;
+ }
+.video-list-item .media-top {
+    display:block;
+    max-height: 180px;
+    overflow: hidden;
+}
+.video-list-item .media-bottom {
+    display:block;
+}
+.media-top .media-object {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -36px;
+}
 
  /* HEADER */
 
