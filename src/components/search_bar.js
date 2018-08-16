@@ -9,12 +9,12 @@ class SearchBar extends Component {
 
 	render() {
 		return (
-			<div className="search-bar form-inline">
+			<div className="search-bar">
 				<input 
 				value={this.state.term}
 				className="form-control"
 				onChange={event => this.onInputChange(event.target.value)} />
-				<button onClick={() => this.props.onSearchTermChange(this.state.term)} className="btn btn-outline-success"><i class="fas fa-search"></i></button>
+				<button onClick={() => this.props.onSearchTermChange(this.state.term)} className="btn"><i class="fas fa-search"></i></button>
 			</div>
 			);
 	}

@@ -5,6 +5,7 @@ import YTSearch from 'youtube-api-search';
 import SearchBar from './components/search_bar';
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
+import $ from 'jquery';
 
 const API_KEY = 'AIzaSyCYpDFE1s1ejgK7zfBv0LwdLXrQDqFG3MU';
 
@@ -34,7 +35,7 @@ class App extends Component {
 		return (
 		<span>
 			<header>
-          	<nav class="navbar navbar-expand-md navbar-light bg-light">
+          	<nav class="navbar navbar-expand-md">
                 <div class="container">
 				  <a class="navbar-brand" href="/"><img src="img/logo.png" class="logo" /></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
