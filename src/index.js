@@ -37,7 +37,7 @@ class App extends Component {
 			<header>
           	<nav class="navbar navbar-expand-md">
                 <div class="container">
-				  <a class="navbar-brand" href="/"><img src="img/logo.png" class="logo" /></a>
+				  <a class="navbar-brand" href="/"><img src="img/newtubeLogo.svg" class="logo" /></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>

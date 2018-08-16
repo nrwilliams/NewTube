@@ -9,7 +9,9 @@ body {
     background-color: #da2626!important;
 }
 .logo {
-    max-width: 118px;
+    max-width: 378px;
+    width: 80px;
+    height: auto;
 }
 .search-bar button {
     border-radius: 100%;
