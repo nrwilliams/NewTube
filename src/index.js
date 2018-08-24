@@ -45,20 +45,37 @@ class App extends Component {
                 </div>
             </nav>
           	</header>
-
-      	    <div class="container">	
-					<VideoDetail video={this.state.selectedVideo} />
-				<VideoList 
-					onVideoSelect={selectedVideo => this.setState({selectedVideo}) }
-					videos={this.state.videos} />
+          	<div className="hero-bg">
+	      	    <div class="container">	
+						<VideoDetail video={this.state.selectedVideo} />
+				</div>
 			</div>
+				<div class="container">
+						<VideoList onVideoSelect={selectedVideo => this.setState({selectedVideo}) } videos={this.state.videos} />
+				</div>
 		</span>
 
 		);
 	}
+};
+class Footer extends Component {
+	
+	render() {
+		return (
+			<div>
+				<img src="img/newtubeLogo.svg" class="logo" />
+				<small>© 2018 NewTube | All Rights Reserved</small>
+			</div>
+		);
+	};
 }
 
 ReactDOM.render(
 	<App />,
 	document.querySelector('.app')
+);
+
+ReactDOM.render(
+	<Footer />,
+	document.querySelector('.footer')
 );

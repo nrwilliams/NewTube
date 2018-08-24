@@ -12,7 +12,7 @@ class SearchBar extends Component {
 			<div className="search-bar">
 				<input 
 				value={this.state.term}
-				className="form-control"
+				className=""
 				onChange={event => this.onInputChange(event.target.value)} />
 				<button onClick={() => this.props.onSearchTermChange(this.state.term)} className="btn"><i class="fas fa-search"></i></button>
 			</div>
